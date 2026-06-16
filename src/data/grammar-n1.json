@@ -1,0 +1,26 @@
+{
+  "level": "N1",
+  "name_zh": "N1 高級文法",
+  "points": [
+    { "pattern": "～にあたって", "title_zh": "在～之際", "explanation_zh": "在重要事情即將進行時，正式用語。", "example_jp": "開業{かいぎょう}にあたって、ご挨拶{あいさつ}申{もう}し上{あ}げます。", "example_zh": "在開業之際謹致問候。" },
+    { "pattern": "～をめぐって", "title_zh": "圍繞著～", "explanation_zh": "針對某爭議性話題而展開的議論、對立。", "example_jp": "遺産{いさん}をめぐって争{あらそ}いが起{お}きた。", "example_zh": "圍繞遺產發生了爭執。" },
+    { "pattern": "～を問{と}わず", "title_zh": "不論～", "explanation_zh": "與某條件無關，「不分～」。", "example_jp": "年齢{ねんれい}を問{と}わず応募{おうぼ}できる。", "example_zh": "不論年齡都可應徵。" },
+    { "pattern": "～をはじめ", "title_zh": "以～為首", "explanation_zh": "舉出代表性的例子，後面還有其他。", "example_jp": "社長{しゃちょう}をはじめ、全社員{ぜんしゃいん}が出席{しゅっせき}した。", "example_zh": "以社長為首，全體員工都出席了。" },
+    { "pattern": "～ずにはいられない", "title_zh": "不禁～／忍不住", "explanation_zh": "感情上無法克制，一定會做。", "example_jp": "あの映画{えいが}は泣{な}かずにはいられない。", "example_zh": "那部電影讓人忍不住落淚。" },
+    { "pattern": "～かねない", "title_zh": "有可能（壞事）", "explanation_zh": "表示有發生不好結果的可能性。", "example_jp": "無理{むり}をすると倒{たお}れかねない。", "example_zh": "太勉強的話可能會病倒。" },
+    { "pattern": "～かねる", "title_zh": "難以～", "explanation_zh": "因某些理由而難以做到，委婉拒絕。", "example_jp": "その件{けん}は私{わたし}には決{き}めかねます。", "example_zh": "那件事我難以決定。" },
+    { "pattern": "～ざるを得{え}ない", "title_zh": "不得不～", "explanation_zh": "迫於情勢，沒有選擇。", "example_jp": "規則{きそく}だから従{したが}わざるを得{え}ない。", "example_zh": "因為是規定，不得不遵守。" },
+    { "pattern": "～に過{す}ぎない", "title_zh": "只不過是～", "explanation_zh": "強調程度低、無足輕重。", "example_jp": "それは言{い}い訳{わけ}に過{す}ぎない。", "example_zh": "那只不過是藉口。" },
+    { "pattern": "～にほかならない", "title_zh": "正是～／無非是", "explanation_zh": "強烈斷定「正是這個，不是別的」。", "example_jp": "成功{せいこう}は努力{どりょく}の結果{けっか}にほかならない。", "example_zh": "成功正是努力的結果。" },
+    { "pattern": "～どころではない", "title_zh": "哪有心情～", "explanation_zh": "因情況不允許而根本做不了某事。", "example_jp": "忙{いそが}しくて旅行{りょこう}どころではない。", "example_zh": "忙得哪有時間旅行。" },
+    { "pattern": "～まじき", "title_zh": "不該有的～", "explanation_zh": "強烈譴責，「身為～不該做的」。", "example_jp": "それは教師{きょうし}としてあるまじき行為{こうい}だ。", "example_zh": "那是身為教師不該有的行為。" },
+    { "pattern": "～や否{いな}や", "title_zh": "一～就立刻", "explanation_zh": "兩動作幾乎同時發生，書面語。", "example_jp": "ベルが鳴{な}るや否{いな}や、生徒{せいと}は教室{きょうしつ}を出{で}た。", "example_zh": "鈴一響學生就衝出教室。" },
+    { "pattern": "～が早{はや}いか", "title_zh": "剛一～就", "explanation_zh": "前項動作一發生，後項立刻接續。", "example_jp": "席{せき}に着{つ}くが早{はや}いか、眠{ねむ}り始{はじ}めた。", "example_zh": "一坐下就睡著了。" },
+    { "pattern": "～ともなると", "title_zh": "一旦到了～就", "explanation_zh": "到了某種程度、階段，情況就會不同。", "example_jp": "年末{ねんまつ}ともなると、店{みせ}は混{こ}み合{あ}う。", "example_zh": "一到年底，店裡就很擁擠。" },
+    { "pattern": "～にかたくない", "title_zh": "不難～", "explanation_zh": "常與「想像」「察」搭配，「不難想像」。", "example_jp": "彼{かれ}の苦労{くろう}は想像{そうぞう}にかたくない。", "example_zh": "不難想像他的辛勞。" },
+    { "pattern": "～をよそに", "title_zh": "不顧～", "explanation_zh": "無視周遭的擔心、反對而行動。", "example_jp": "親{おや}の心配{しんぱい}をよそに、彼{かれ}は旅{たび}に出{で}た。", "example_zh": "他不顧父母擔心就出發旅行了。" },
+    { "pattern": "～ならではの", "title_zh": "只有～才有的", "explanation_zh": "強調某對象獨有的特色。", "example_jp": "これは職人{しょくにん}ならではの技{わざ}だ。", "example_zh": "這是只有職人才有的技藝。" },
+    { "pattern": "～きらいがある", "title_zh": "有～的傾向（負面）", "explanation_zh": "指不好的習性或傾向。", "example_jp": "彼{かれ}は物事{ものごと}を大{おお}げさに言{い}うきらいがある。", "example_zh": "他有把事情說得誇張的傾向。" },
+    { "pattern": "～に至{いた}っては", "title_zh": "至於～（極端例子）", "explanation_zh": "舉出最極端的例子加以強調。", "example_jp": "彼{かれ}に至{いた}っては、一言{ひとこと}も話{はな}さなかった。", "example_zh": "至於他，更是一句話都沒說。" }
+  ]
+}

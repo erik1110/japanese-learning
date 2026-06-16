@@ -1,0 +1,26 @@
+{
+  "level": "N3",
+  "name_zh": "N3 中級文法",
+  "points": [
+    { "pattern": "～ようだ／みたいだ", "title_zh": "好像～（推測、比喻）", "explanation_zh": "根據觀察做的推測，或比喻。「みたいだ」較口語。", "example_jp": "外{そと}は雨{あめ}が降{ふ}っているようだ。", "example_zh": "外面好像在下雨。" },
+    { "pattern": "～らしい", "title_zh": "聽說～／典型的～", "explanation_zh": "根據聽到的訊息推測；或表示「有某事物該有的樣子」。", "example_jp": "彼{かれ}は来年{らいねん}結婚{けっこん}するらしい。", "example_zh": "聽說他明年要結婚。" },
+    { "pattern": "～そうだ（様態）", "title_zh": "看起來～", "explanation_zh": "動詞ます形／形容詞語幹＋そう，表示外觀上的推測。", "example_jp": "このケーキはおいしそうだ。", "example_zh": "這個蛋糕看起來很好吃。" },
+    { "pattern": "～はずだ", "title_zh": "照理說應該～", "explanation_zh": "根據理由做出的有把握推斷。", "example_jp": "彼{かれ}はもう着{つ}いているはずだ。", "example_zh": "他照理說應該已經到了。" },
+    { "pattern": "～かもしれない", "title_zh": "也許～", "explanation_zh": "表示可能性，把握度比「でしょう」低。", "example_jp": "明日{あした}は雪{ゆき}が降{ふ}るかもしれない。", "example_zh": "明天也許會下雪。" },
+    { "pattern": "～について", "title_zh": "關於～", "explanation_zh": "提示談論、思考的主題。", "example_jp": "日本{にほん}の文化{ぶんか}について研究{けんきゅう}しています。", "example_zh": "我在研究關於日本文化的事。" },
+    { "pattern": "～によって", "title_zh": "依～而異／藉由～", "explanation_zh": "表示依據、手段，或被動句的動作者。", "example_jp": "国{くに}によって習慣{しゅうかん}が違{ちが}う。", "example_zh": "習慣因國家而異。" },
+    { "pattern": "～ために", "title_zh": "為了～（目的）", "explanation_zh": "表示目的；接名詞時用「のために」。", "example_jp": "健康{けんこう}のために毎日{まいにち}歩{ある}く。", "example_zh": "為了健康每天走路。" },
+    { "pattern": "～ように", "title_zh": "為了～（盼望、目標）", "explanation_zh": "接非意志動詞，表示努力的方向或希望。", "example_jp": "忘{わす}れないようにメモする。", "example_zh": "為了不忘記而做筆記。" },
+    { "pattern": "～場合{ばあい}は", "title_zh": "～的情況下", "explanation_zh": "假設某種情形時的應對。", "example_jp": "遅{おく}れる場合{ばあい}は連絡{れんらく}してください。", "example_zh": "如果會遲到請聯絡。" },
+    { "pattern": "～と（恆常條件）", "title_zh": "一～就～", "explanation_zh": "表示必然的結果或自然現象。", "example_jp": "春{はる}になると花{はな}が咲{さ}く。", "example_zh": "一到春天花就開。" },
+    { "pattern": "～ところだ", "title_zh": "正要／正在／剛～", "explanation_zh": "依前接形態表示動作的不同階段。", "example_jp": "今{いま}出{で}かけるところです。", "example_zh": "我正要出門。" },
+    { "pattern": "～たまま", "title_zh": "保持～的狀態", "explanation_zh": "表示某狀態持續不變。", "example_jp": "窓{まど}を開{あ}けたまま寝{ね}てしまった。", "example_zh": "開著窗就睡著了。" },
+    { "pattern": "～がる", "title_zh": "（第三人稱）表現出～的樣子", "explanation_zh": "把他人的情感、慾望客觀地表達出來。", "example_jp": "子供{こども}が犬{いぬ}を怖{こわ}がっている。", "example_zh": "小孩很怕狗。" },
+    { "pattern": "～ばかり", "title_zh": "光是～／剛～", "explanation_zh": "表示「淨是、只」，或動作剛完成不久。", "example_jp": "彼{かれ}はゲームばかりしている。", "example_zh": "他光顧著打電動。" },
+    { "pattern": "～うちに", "title_zh": "趁～的時候", "explanation_zh": "趁某狀態還持續時做某事。", "example_jp": "熱{あつ}いうちに召{め}し上{あ}がってください。", "example_zh": "請趁熱享用。" },
+    { "pattern": "使役形（～させる）", "title_zh": "使役：讓／叫～做", "explanation_zh": "表示讓某人做某事或允許。", "example_jp": "母{はは}は弟{おとうと}に部屋{へや}を掃除{そうじ}させた。", "example_zh": "媽媽叫弟弟打掃房間。" },
+    { "pattern": "～てしまう", "title_zh": "～完了／不小心～", "explanation_zh": "表示動作完成，或帶有遺憾、後悔的語氣。", "example_jp": "宿題{しゅくだい}を忘{わす}れてしまった。", "example_zh": "我把作業忘了。" },
+    { "pattern": "～ておく", "title_zh": "事先做好～", "explanation_zh": "為了將來做準備，或維持某狀態。", "example_jp": "旅行{りょこう}の前{まえ}に切符{きっぷ}を買{か}っておく。", "example_zh": "旅行前先買好票。" },
+    { "pattern": "～のに", "title_zh": "明明～卻～", "explanation_zh": "表示與預期相反，帶有不滿或意外。", "example_jp": "薬{くすり}を飲{の}んだのに、まだ痛{いた}い。", "example_zh": "明明吃了藥卻還是痛。" }
+  ]
+}

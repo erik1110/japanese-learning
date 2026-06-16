@@ -1,0 +1,18 @@
+{
+  "level": "N5",
+  "name_zh": "N5 入門文法",
+  "points": [
+    { "pattern": "～は～です", "title_zh": "「是」的肯定句", "explanation_zh": "「は」是主題助詞，「です」表示禮貌的斷定。最基本的句型。", "example_jp": "私{わたし}は学生{がくせい}です。", "example_zh": "我是學生。" },
+    { "pattern": "～は～ではありません", "title_zh": "否定句", "explanation_zh": "「ではありません」（口語：じゃありません）是「です」的否定。", "example_jp": "彼{かれ}は先生{せんせい}ではありません。", "example_zh": "他不是老師。" },
+    { "pattern": "～か", "title_zh": "疑問句", "explanation_zh": "句尾加「か」表示疑問，相當於中文的「嗎」。", "example_jp": "あなたは日本人{にほんじん}ですか。", "example_zh": "你是日本人嗎？" },
+    { "pattern": "～の～", "title_zh": "の：所屬與修飾", "explanation_zh": "「の」連接兩個名詞，表示所屬、性質。", "example_jp": "これは私{わたし}の本{ほん}です。", "example_zh": "這是我的書。" },
+    { "pattern": "～を～ます", "title_zh": "を：動作的對象", "explanation_zh": "「を」標示他動詞的受詞（動作對象）。", "example_jp": "毎朝{まいあさ}コーヒーを飲{の}みます。", "example_zh": "每天早上喝咖啡。" },
+    { "pattern": "～へ／に行{い}きます", "title_zh": "表示方向、目的地", "explanation_zh": "「へ」或「に」接在地點後，表示移動的方向。", "example_jp": "明日{あした}学校{がっこう}へ行{い}きます。", "example_zh": "明天去學校。" },
+    { "pattern": "～で", "title_zh": "で：場所與手段", "explanation_zh": "「で」表示動作發生的場所，或使用的工具、方法。", "example_jp": "図書館{としょかん}で勉強{べんきょう}します。", "example_zh": "在圖書館念書。" },
+    { "pattern": "～があります／います", "title_zh": "存在句", "explanation_zh": "無生命物用「あります」，有生命（人、動物）用「います」。", "example_jp": "教室{きょうしつ}に猫{ねこ}がいます。", "example_zh": "教室裡有貓。" },
+    { "pattern": "形容詞＋名詞", "title_zh": "形容詞修飾名詞", "explanation_zh": "い形容詞直接接名詞；な形容詞要加「な」。", "example_jp": "大{おお}きい犬{いぬ}と静{しず}かな町{まち}。", "example_zh": "大狗和安靜的城鎮。" },
+    { "pattern": "～たいです", "title_zh": "想要做～", "explanation_zh": "動詞ます形去ます＋たい，表示說話者的願望。", "example_jp": "日本{にほん}へ行{い}きたいです。", "example_zh": "我想去日本。" },
+    { "pattern": "～ましょう／ませんか", "title_zh": "邀約", "explanation_zh": "「ましょう」表提議一起做；「ませんか」是禮貌的邀請。", "example_jp": "一緒{いっしょ}に昼{ひる}ご飯{はん}を食{た}べませんか。", "example_zh": "要不要一起吃午餐？" },
+    { "pattern": "～が好{す}きです", "title_zh": "喜歡～", "explanation_zh": "喜好、能力的對象用「が」標示，而非「を」。", "example_jp": "私{わたし}は音楽{おんがく}が好{す}きです。", "example_zh": "我喜歡音樂。" }
+  ]
+}

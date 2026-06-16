@@ -1,0 +1,21 @@
+{
+  "level": "N4",
+  "name_zh": "N4 初級文法",
+  "points": [
+    { "pattern": "～て form", "title_zh": "て形：連接動作", "explanation_zh": "動詞て形可連接動作、表先後順序，是許多句型的基礎。", "example_jp": "朝{あさ}起{お}きて、顔{かお}を洗{あら}います。", "example_zh": "早上起床後洗臉。" },
+    { "pattern": "～ている", "title_zh": "正在進行／狀態", "explanation_zh": "表示動作進行中，或動作後持續的狀態。", "example_jp": "今{いま}、本{ほん}を読{よ}んでいます。", "example_zh": "現在正在看書。" },
+    { "pattern": "～てもいいです", "title_zh": "可以做～（許可）", "explanation_zh": "て形＋もいいです，表示允許、許可。", "example_jp": "ここで写真{しゃしん}を撮{と}ってもいいですか。", "example_zh": "可以在這裡拍照嗎？" },
+    { "pattern": "～てはいけません", "title_zh": "不可以～（禁止）", "explanation_zh": "て形＋はいけません，表示禁止。", "example_jp": "ここでタバコを吸{す}ってはいけません。", "example_zh": "這裡不可以抽菸。" },
+    { "pattern": "～なければなりません", "title_zh": "必須～", "explanation_zh": "表示義務或必要，「不做不行」。", "example_jp": "明日{あした}までに出{だ}さなければなりません。", "example_zh": "明天之前必須交出去。" },
+    { "pattern": "～たことがあります", "title_zh": "曾經做過～（經驗）", "explanation_zh": "動詞た形＋ことがあります，表示過去的經驗。", "example_jp": "富士山{ふじさん}に登{のぼ}ったことがあります。", "example_zh": "我曾經爬過富士山。" },
+    { "pattern": "～たり～たりします", "title_zh": "列舉動作", "explanation_zh": "舉出幾個代表性動作，暗示還有其他。", "example_jp": "休{やす}みは本{ほん}を読{よ}んだり、寝{ね}たりします。", "example_zh": "假日會看看書、睡睡覺。" },
+    { "pattern": "～と思{おも}います", "title_zh": "我認為～", "explanation_zh": "普通形＋と思います，表達個人想法、推測。", "example_jp": "明日{あした}は雨{あめ}が降{ふ}ると思{おも}います。", "example_zh": "我覺得明天會下雨。" },
+    { "pattern": "～と言{い}っていました", "title_zh": "轉述：某人說～", "explanation_zh": "引用他人的話。", "example_jp": "田中{たなか}さんは来{こ}ないと言{い}っていました。", "example_zh": "田中先生說他不來。" },
+    { "pattern": "～でしょう", "title_zh": "推測：大概～吧", "explanation_zh": "表示推測，語氣比「と思います」客觀。", "example_jp": "彼{かれ}はもう着{つ}いたでしょう。", "example_zh": "他大概已經到了吧。" },
+    { "pattern": "～ながら", "title_zh": "一邊～一邊～", "explanation_zh": "ます形去ます＋ながら，表示同時進行兩動作。", "example_jp": "音楽{おんがく}を聞{き}きながら走{はし}ります。", "example_zh": "一邊聽音樂一邊跑步。" },
+    { "pattern": "～たらどうですか", "title_zh": "建議：～的話如何", "explanation_zh": "用來給對方建議。", "example_jp": "医者{いしゃ}に行{い}ったらどうですか。", "example_zh": "去看醫生如何？" },
+    { "pattern": "～ば", "title_zh": "假定條件", "explanation_zh": "ば形表示條件，「如果～就～」。", "example_jp": "安{やす}ければ買{か}います。", "example_zh": "便宜的話就買。" },
+    { "pattern": "～ようになりました", "title_zh": "變得會～（變化）", "explanation_zh": "表示能力或狀況的轉變。", "example_jp": "日本語{にほんご}が話{はな}せるようになりました。", "example_zh": "變得會說日語了。" },
+    { "pattern": "受身形（～られる）", "title_zh": "被動", "explanation_zh": "表示被動，受到他人動作影響。", "example_jp": "先生{せんせい}に名前{なまえ}を呼{よ}ばれました。", "example_zh": "被老師叫了名字。" }
+  ]
+}
