@@ -29,6 +29,12 @@ const MODES = [
     title: '情境對話',
     desc: '10 大類情境、各 5 種場景，可整段播放或逐句聆聽。',
   },
+  {
+    key: 'anime',
+    icon: '🎬',
+    title: '動漫日語',
+    desc: '22 部人氣動漫、各 3 種情境的原創練習句（非真實台詞），可聽發音。',
+  },
 ]
 
 export default function Home({ navigate }) {

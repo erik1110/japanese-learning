@@ -35,9 +35,9 @@ jobs:
         run: npm ci
 
       - name: Build
-        # Served from the site root. Set BASE_PATH here if you instead deploy
-        # under a repository sub-path (e.g. /${{ github.event.repository.name }}/).
-        run: npm run build
+        # This is a project Pages site served under a repository sub-path
+        # (https://<user>.github.io/<repo>/), so the asset base must match.
+        run: BASE_PATH=/${{ github.event.repository.name }}/ npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

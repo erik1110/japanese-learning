@@ -826,3 +826,64 @@ ruby rt {
     font-size: 32px;
   }
 }
+
+/* ---------- Anime ---------- */
+.anime-note {
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  color: #9a3412;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0 0 18px;
+}
+
+.anime-speaker {
+  flex-shrink: 0;
+  width: 92px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.anime-speaker-zh {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.anime-quote {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.anime-quote-zh {
+  color: var(--muted);
+  font-size: 15px;
+  margin: 8px 0 4px;
+}
+
+.quiz-prompt-zh {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 4px 0 0;
+}
+
+.quiz-hint {
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+  margin: 8px 0 0;
+}
+
+@media (max-width: 600px) {
+  .anime-speaker {
+    width: 72px;
+  }
+}

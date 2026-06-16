@@ -5,6 +5,7 @@ import Quiz from './views/Quiz.jsx'
 import Review from './views/Review.jsx'
 import Dialogues from './views/Dialogues.jsx'
 import Grammar from './views/Grammar.jsx'
+import Anime from './views/Anime.jsx'
 import { cancelSpeech } from './utils/speech.js'
 
 const VIEWS = {
@@ -14,9 +15,10 @@ const VIEWS = {
   quiz: { title: '牛刀小試', component: Quiz },
   review: { title: '隨機背誦', component: Review },
   dialogues: { title: '情境對話', component: Dialogues },
+  anime: { title: '動漫日語', component: Anime },
 }
 
-const NAV = ['flashcards', 'grammar', 'quiz', 'review', 'dialogues']
+const NAV = ['flashcards', 'grammar', 'quiz', 'review', 'dialogues', 'anime']
 
 export default function App() {
   const [view, setView] = useState('home')

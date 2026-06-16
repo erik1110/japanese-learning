@@ -7,6 +7,7 @@ import n3 from './n3.json'
 import n4 from './n4.json'
 import n5 from './n5.json'
 import dialogues from './dialogues.json'
+import anime from './anime.json'
 import gn1 from './grammar-n1.json'
 import gn2 from './grammar-n2.json'
 import gn3 from './grammar-n3.json'
@@ -42,6 +43,15 @@ export const DIALOGUE_CATEGORIES = dialogues.categories
 
 export function getDialogueCategory(categoryId) {
   return DIALOGUE_CATEGORIES.find((c) => c.id === categoryId)
+}
+
+// Anime practice lines. NOTE: every line is an *original* sentence written to
+// match each work's setting/character tone — not an actual quote from the work.
+export const ANIME_WORKS = anime.works
+export const ANIME_NOTE = anime.note_zh
+
+export function getAnimeWork(workId) {
+  return ANIME_WORKS.find((w) => w.id === workId)
 }
 
 // Grammar, one entry per JLPT level (easiest to hardest).
