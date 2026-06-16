@@ -109,6 +109,49 @@ ruby rt {
   color: #fff;
 }
 
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  min-width: 168px;
+  background: var(--surface);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  border: 1px solid #e2e8f0;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  z-index: 20;
+}
+
+.nav-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-dropdown-icon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.nav-dropdown-item:hover {
+  background: #fce7eb;
+  color: var(--primary);
+}
+
 /* ---------- Main / Footer ---------- */
 .app-main {
   flex: 1;

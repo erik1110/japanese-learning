@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Home from './views/Home.jsx'
 import Flashcards from './views/Flashcards.jsx'
 import Quiz from './views/Quiz.jsx'
@@ -20,8 +20,28 @@ const VIEWS = {
 
 const NAV = ['flashcards', 'grammar', 'quiz', 'review', 'dialogues', 'anime']
 
+// External links shown at the end of the nav bar.
+const EXTERNAL_LINKS = [
+  { title: '個人部落格', href: 'https://erik1110.com/', icon: '🇹🇼' },
+  { title: '法文學習', href: 'https://erik1110.com/french-learning/', icon: '🇫🇷' },
+]
+
 export default function App() {
   const [view, setView] = useState('home')
+  const [menuOpen, setMenuOpen] = useState(false)
+  const menuRef = useRef(null)
+
+  // Close the "其他連結" dropdown when clicking outside of it.
+  useEffect(() => {
+    if (!menuOpen) return
+    function onClick(e) {
+      if (menuRef.current && !menuRef.current.contains(e.target)) {
+        setMenuOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', onClick)
+    return () => document.removeEventListener('mousedown', onClick)
+  }, [menuOpen])
 
   function navigate(next) {
     cancelSpeech() // stop any audio when switching screens
@@ -47,6 +67,33 @@ export default function App() {
               {VIEWS[key].title}
             </button>
           ))}
+          <div className="nav-dropdown" ref={menuRef}>
+            <button
+              className={`nav-link ${menuOpen ? 'active' : ''}`}
+              onClick={() => setMenuOpen((o) => !o)}
+              aria-haspopup="true"
+              aria-expanded={menuOpen}
+            >
+              其他連結 ▾
+            </button>
+            {menuOpen && (
+              <div className="nav-dropdown-menu">
+                {EXTERNAL_LINKS.map((link) => (
+                  <a
+                    key={link.href}
+                    className="nav-dropdown-item"
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    <span className="nav-dropdown-icon">{link.icon}</span>
+                    {link.title}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
         </nav>
       </header>
 
