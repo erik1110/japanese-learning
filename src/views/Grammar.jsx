@@ -11,6 +11,42 @@ const LEVEL_COLORS = {
   N1: '#ef4444',
 }
 
+function GrammarCard({ p, index }) {
+  const [open, setOpen] = useState(false)
+  return (
+    <div className="grammar-card">
+      <div className="grammar-head">
+        <span className="grammar-num">{index + 1}</span>
+        <span className="grammar-pattern">{p.pattern}</span>
+      </div>
+      <div className="grammar-title">{p.title_zh}</div>
+      <p className="grammar-explain">{p.explanation_zh}</p>
+      <div className="grammar-example">
+        <div className="example-row">
+          <div className="example-jp">
+            <Furigana text={p.example_jp} />
+          </div>
+          <SpeakButton text={p.example_jp} label="" />
+        </div>
+        <div className="example-zh">{p.example_zh}</div>
+      </div>
+      {p.detail_zh && (
+        <div className="grammar-detail-wrap">
+          <button
+            type="button"
+            className="grammar-detail-btn"
+            onClick={() => setOpen((o) => !o)}
+            aria-expanded={open}
+          >
+            {open ? '收起詳細解說 ▲' : '詳細解說 ▼'}
+          </button>
+          {open && <p className="grammar-detail">{p.detail_zh}</p>}
+        </div>
+      )}
+    </div>
+  )
+}
+
 export default function Grammar() {
   const [levelId, setLevelId] = useState(null)
 
@@ -54,23 +90,7 @@ export default function Grammar() {
 
       <div className="grammar-list">
         {level.points.map((p, i) => (
-          <div key={i} className="grammar-card">
-            <div className="grammar-head">
-              <span className="grammar-num">{i + 1}</span>
-              <span className="grammar-pattern">{p.pattern}</span>
-            </div>
-            <div className="grammar-title">{p.title_zh}</div>
-            <p className="grammar-explain">{p.explanation_zh}</p>
-            <div className="grammar-example">
-              <div className="example-row">
-                <div className="example-jp">
-                  <Furigana text={p.example_jp} />
-                </div>
-                <SpeakButton text={p.example_jp} label="" />
-              </div>
-              <div className="example-zh">{p.example_zh}</div>
-            </div>
-          </div>
+          <GrammarCard key={i} p={p} index={i} />
         ))}
       </div>
     </div>

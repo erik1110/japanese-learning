@@ -6,6 +6,7 @@ import Review from './views/Review.jsx'
 import Dialogues from './views/Dialogues.jsx'
 import Grammar from './views/Grammar.jsx'
 import Anime from './views/Anime.jsx'
+import MockExam from './views/MockExam.jsx'
 import { cancelSpeech } from './utils/speech.js'
 
 const VIEWS = {
@@ -13,12 +14,13 @@ const VIEWS = {
   flashcards: { title: '單字卡', component: Flashcards },
   grammar: { title: '文法攻略', component: Grammar },
   quiz: { title: '牛刀小試', component: Quiz },
+  exam: { title: '模擬試題', component: MockExam },
   review: { title: '隨機背誦', component: Review },
   dialogues: { title: '情境對話', component: Dialogues },
   anime: { title: '動漫日語', component: Anime },
 }
 
-const NAV = ['flashcards', 'grammar', 'quiz', 'review', 'dialogues', 'anime']
+const NAV = ['flashcards', 'grammar', 'quiz', 'exam', 'review', 'dialogues', 'anime']
 
 // External links shown at the end of the nav bar.
 const EXTERNAL_LINKS = [

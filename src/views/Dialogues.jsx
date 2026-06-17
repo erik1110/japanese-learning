@@ -36,7 +36,8 @@ export default function Dialogues() {
       }
       setPlayingIndex(i)
       speak(lines[i].jp, {
-        rate: 0.95,
+        // Give each speaker (A, B, …) a distinct voice when more than one exists.
+        voiceIndex: Math.max(0, (lines[i].speaker || 'A').charCodeAt(0) - 65),
         onEnd: () => playFrom(i + 1),
         onError: () => playFrom(i + 1),
       })

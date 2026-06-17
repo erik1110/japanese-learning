@@ -1017,3 +1017,348 @@ ruby rt {
   font-weight: 700;
   margin: 4px 0 8px;
 }
+
+/* ---- Grammar detailed explanation --------------------------------------- */
+.grammar-detail-wrap {
+  margin-top: 12px;
+  border-top: 1px dashed #e2e8f0;
+  padding-top: 10px;
+}
+
+.grammar-detail-btn {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2px 0;
+}
+
+.grammar-detail-btn:hover {
+  text-decoration: underline;
+}
+
+.grammar-detail {
+  margin: 8px 0 0;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text);
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 12px 14px;
+  white-space: pre-wrap;
+}
+
+/* ---- Mock exam ---------------------------------------------------------- */
+.exam-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.exam-timer {
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  background: #f1f5f9;
+  border-radius: 999px;
+  padding: 6px 16px;
+}
+
+.exam-timer.low {
+  color: #fff;
+  background: var(--primary);
+  animation: exam-pulse 1s infinite;
+}
+
+@keyframes exam-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.55; }
+}
+
+.exam-progress-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.exam-progress-bar {
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 22px;
+}
+
+.exam-progress-fill {
+  height: 100%;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.exam-question {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 22px;
+  margin-bottom: 18px;
+}
+
+.exam-type-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+  background: rgba(99, 102, 241, 0.12);
+  border-radius: 999px;
+  padding: 3px 10px;
+}
+
+.exam-prompt {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 10px 0 6px;
+}
+
+.exam-stem {
+  font-size: 22px;
+  line-height: 1.9;
+  font-weight: 600;
+}
+
+.exam-options {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.exam-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  font-size: 18px;
+  background: var(--surface);
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.exam-option:hover {
+  border-color: var(--accent);
+}
+
+.exam-option.selected {
+  border-color: var(--accent);
+  background: rgba(99, 102, 241, 0.08);
+}
+
+.exam-option-no {
+  flex: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+}
+
+.exam-option.selected .exam-option-no {
+  background: var(--accent);
+  color: #fff;
+}
+
+.exam-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.exam-nav button {
+  min-width: 120px;
+}
+
+/* Results */
+.exam-timeout {
+  text-align: center;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.exam-result-summary {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.exam-used-time {
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.exam-review {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.exam-review-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+  border-left: 5px solid #cbd5e1;
+}
+
+.exam-review-card.ok { border-left-color: #22c55e; }
+.exam-review-card.ng { border-left-color: #ef4444; }
+
+.exam-review-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.exam-qnum {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.exam-mark {
+  margin-left: auto;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.exam-mark.ok { color: #16a34a; }
+.exam-mark.ng { color: #dc2626; }
+
+.exam-review-options {
+  display: grid;
+  gap: 6px;
+  margin: 10px 0;
+}
+
+.exam-review-opt {
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.exam-review-opt.correct {
+  background: rgba(34, 197, 94, 0.15);
+  font-weight: 700;
+}
+
+.exam-review-opt.wrong {
+  background: rgba(239, 68, 68, 0.15);
+  text-decoration: line-through;
+}
+
+.exam-explain {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text);
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin: 8px 0 0;
+}
+
+/* ---- Quiz answer audio -------------------------------------------------- */
+.quiz-answer-word {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 8px 0 4px;
+}
+
+/* ---- Mock exam: listening & reading ------------------------------------- */
+.exam-listen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.exam-listen-icon {
+  font-size: 40px;
+}
+
+.exam-listen .speak-btn {
+  font-size: 18px;
+  padding: 10px 22px;
+}
+
+.exam-listen-hint {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0;
+  text-align: center;
+}
+
+.exam-passage {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  margin-bottom: 16px;
+  font-size: 17px;
+  line-height: 2;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.exam-passage-title {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.exam-passage-review {
+  font-size: 15px;
+  line-height: 1.9;
+  max-height: none;
+  box-shadow: none;
+  background: #f8fafc;
+  padding: 14px;
+}
+
+.exam-script {
+  background: #f1f5f9;
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.exam-script-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+  margin-bottom: 4px;
+}

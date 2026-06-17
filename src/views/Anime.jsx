@@ -35,7 +35,6 @@ export default function Anime() {
       }
       setPlayingIndex(i)
       speak(lines[i].jp, {
-        rate: 0.95,
         onEnd: () => playFrom(i + 1),
         onError: () => playFrom(i + 1),
       })

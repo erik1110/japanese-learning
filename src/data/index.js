@@ -14,6 +14,7 @@ import gn2 from './grammar-n2.json'
 import gn3 from './grammar-n3.json'
 import gn4 from './grammar-n4.json'
 import gn5 from './grammar-n5.json'
+import exams from './exams.json'
 
 // JLPT levels, ordered from easiest to hardest. The onomatopoeia / mimetic
 // word library (擬聲・擬態語) is an extra, non-JLPT unit appended at the end so
@@ -64,4 +65,12 @@ export const GRAMMAR_LEVELS = [gn5, gn4, gn3, gn2, gn1]
 
 export function getGrammarLevel(levelId) {
   return GRAMMAR_LEVELS.find((g) => g.level === levelId)
+}
+
+// JLPT-style mock exams, one entry per level (N5..N1), each with a countdown
+// time limit and a set of multiple-choice questions.
+export const EXAM_LEVELS = exams.levels
+
+export function getExamLevel(levelId) {
+  return EXAM_LEVELS.find((e) => e.level === levelId)
 }

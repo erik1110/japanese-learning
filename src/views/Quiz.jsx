@@ -158,14 +158,16 @@ export default function Quiz() {
           <p className={selected === q.answer ? 'fb-correct' : 'fb-wrong'}>
             {selected === q.answer ? '✅ 答對了！' : `❌ 正確答案：${q.answer}`}
           </p>
-          {hideKanji && (
-            <div className="quiz-reveal-word">
-              <Furigana text={q.word.word} />
-            </div>
-          )}
+          <div className="quiz-answer-word">
+            <Furigana text={q.word.word} />
+            <SpeakButton text={q.word.word} label="單字發音" />
+          </div>
           {q.word.example_jp && (
             <div className="quiz-example">
-              <Furigana text={q.word.example_jp} />
+              <div className="example-row">
+                <Furigana text={q.word.example_jp} />
+                <SpeakButton text={q.word.example_jp} label="例句發音" />
+              </div>
               <div className="example-zh">{q.word.example_zh}</div>
             </div>
           )}

@@ -4,7 +4,7 @@ import { speak, isSpeechSupported } from '../utils/speech.js'
 /**
  * A 🔊 button that speaks furigana-markup Japanese text.
  */
-export default function SpeakButton({ text, label = '發音', rate = 0.9, className = '' }) {
+export default function SpeakButton({ text, label = '發音', className = '' }) {
   const [speaking, setSpeaking] = useState(false)
   const supported = isSpeechSupported()
 
@@ -12,8 +12,8 @@ export default function SpeakButton({ text, label = '發音', rate = 0.9, classN
     e.stopPropagation()
     if (!supported) return
     setSpeaking(true)
+    // Rate is centralised in speech.js so every feature plays at one pace.
     speak(text, {
-      rate,
       onEnd: () => setSpeaking(false),
       onError: () => setSpeaking(false),
     })
