@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { LEVELS, getLevel } from '../data/index.js'
 import FlashCard from '../components/FlashCard.jsx'
+import HideKanjiToggle from '../components/HideKanjiToggle.jsx'
 
 const LEVEL_COLORS = {
   N5: '#22c55e',
@@ -8,6 +9,7 @@ const LEVEL_COLORS = {
   N3: '#a855f7',
   N2: '#f59e0b',
   N1: '#ef4444',
+  擬音: '#ec4899',
 }
 
 export default function Flashcards() {
@@ -19,7 +21,7 @@ export default function Flashcards() {
     return (
       <div className="view">
         <h1 className="view-title">選擇等級</h1>
-        <p className="view-sub">JLPT 由 N5（入門）到 N1（最難）</p>
+        <p className="view-sub">JLPT 由 N5（入門）到 N1（最難），另含擬聲・擬態語單元</p>
         <div className="level-grid">
           {LEVELS.map((lvl) => (
             <button
@@ -79,6 +81,9 @@ export default function Flashcards() {
         <span className="view-title-tag">{level.level}</span>
       </h1>
       <p className="view-sub">點擊卡片翻面看中文意思與例句</p>
+      <div className="quiz-setting">
+        <HideKanjiToggle />
+      </div>
       <div className="card-grid">
         {category.words.map((word, i) => (
           <FlashCard key={`${categoryId}-${i}`} word={word} />

@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { LEVELS, allWordsForLevel } from '../data/index.js'
 import Furigana from '../components/Furigana.jsx'
 import SpeakButton from '../components/SpeakButton.jsx'
+import HideKanjiToggle from '../components/HideKanjiToggle.jsx'
+import { useHideKanji } from '../utils/useHideKanji.js'
 
 const QUESTION_COUNT = 10
 
@@ -31,6 +33,7 @@ function buildQuiz(words) {
 }
 
 export default function Quiz() {
+  const [hideKanji] = useHideKanji()
   const [levelId, setLevelId] = useState(null)
   const [quiz, setQuiz] = useState([])
   const [current, setCurrent] = useState(0)
@@ -73,6 +76,10 @@ export default function Quiz() {
       <div className="view">
         <h1 className="view-title">牛刀小試</h1>
         <p className="view-sub">隨機出題，從四個選項中選出正確的中文意思</p>
+        <div className="quiz-setting">
+          <HideKanjiToggle />
+          <p className="quiz-setting-hint">開啟後題目只顯示假名，無法直接靠漢字猜意思</p>
+        </div>
         <div className="level-grid">
           {LEVELS.map((lvl) => (
             <button key={lvl.level} className="level-card" onClick={() => start(lvl.level)}>
@@ -124,8 +131,8 @@ export default function Quiz() {
       </div>
 
       <div className="quiz-question">
-        <div className="quiz-word">
-          <Furigana text={q.word.word} />
+        <div className={`quiz-word ${hideKanji ? 'quiz-word-kana' : ''}`}>
+          {hideKanji ? q.word.kana : <Furigana text={q.word.word} />}
         </div>
         <SpeakButton text={q.word.word} label="發音" />
         <p className="quiz-prompt">這個單字的中文意思是？</p>
@@ -151,6 +158,11 @@ export default function Quiz() {
           <p className={selected === q.answer ? 'fb-correct' : 'fb-wrong'}>
             {selected === q.answer ? '✅ 答對了！' : `❌ 正確答案：${q.answer}`}
           </p>
+          {hideKanji && (
+            <div className="quiz-reveal-word">
+              <Furigana text={q.word.word} />
+            </div>
+          )}
           {q.word.example_jp && (
             <div className="quiz-example">
               <Furigana text={q.word.example_jp} />

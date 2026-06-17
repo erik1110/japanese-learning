@@ -1,16 +1,20 @@
 import { useState, useEffect } from 'react'
 import Furigana from './Furigana.jsx'
 import SpeakButton from './SpeakButton.jsx'
+import { useHideKanji } from '../utils/useHideKanji.js'
 
 /**
  * A single flippable vocabulary card.
- * Front: the word (with furigana) + a pronunciation button.
+ * Front: the word (with furigana) + a pronunciation button. When "hide kanji"
+ *        is on, only the kana reading is shown so the kanji can't be read off.
  * Back: Chinese meaning, a Japanese example sentence (+ its audio) and a
- *       Chinese translation of the example.
+ *       Chinese translation of the example. When kanji is hidden on the front,
+ *       the back reveals the actual word so it can be checked.
  */
 export default function FlashCard({ word }) {
   const [flipped, setFlipped] = useState(false)
   const [showExample, setShowExample] = useState(false)
+  const [hideKanji] = useHideKanji()
 
   // Reset when the card changes (e.g. in review mode).
   useEffect(() => {
@@ -26,16 +30,29 @@ export default function FlashCard({ word }) {
       <div className="flashcard-inner">
         {/* Front */}
         <div className="flashcard-face flashcard-front">
-          <div className="card-word">
-            <Furigana text={word.word} />
-          </div>
-          <div className="card-kana">{word.kana}</div>
+          {hideKanji ? (
+            <div className="card-word card-word-kana">{word.kana}</div>
+          ) : (
+            <>
+              <div className="card-word">
+                <Furigana text={word.word} />
+              </div>
+              <div className="card-kana">{word.kana}</div>
+            </>
+          )}
           <SpeakButton text={word.word} label="發音" />
-          <div className="flip-hint">點擊卡片看中文意思</div>
+          <div className="flip-hint">
+            {hideKanji ? '點擊卡片看漢字與中文意思' : '點擊卡片看中文意思'}
+          </div>
         </div>
 
         {/* Back */}
         <div className="flashcard-face flashcard-back">
+          {hideKanji && (
+            <div className="card-reveal-word">
+              <Furigana text={word.word} />
+            </div>
+          )}
           <div className="card-meaning-label">中文意思</div>
           <div className="card-meaning">{word.meaning_zh}</div>
 

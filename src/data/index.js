@@ -6,6 +6,7 @@ import n2 from './n2.json'
 import n3 from './n3.json'
 import n4 from './n4.json'
 import n5 from './n5.json'
+import onomatopoeia from './onomatopoeia.json'
 import dialogues from './dialogues.json'
 import anime from './anime.json'
 import gn1 from './grammar-n1.json'
@@ -14,8 +15,12 @@ import gn3 from './grammar-n3.json'
 import gn4 from './grammar-n4.json'
 import gn5 from './grammar-n5.json'
 
-// Ordered from easiest to hardest.
-export const LEVELS = [n5, n4, n3, n2, n1]
+// JLPT levels, ordered from easiest to hardest. The onomatopoeia / mimetic
+// word library (擬聲・擬態語) is an extra, non-JLPT unit appended at the end so
+// it shows up as its own card in the flashcards / quiz / review pickers.
+export const LEVELS = [n5, n4, n3, n2, n1, onomatopoeia]
+
+export const ONOMATOPOEIA = onomatopoeia
 
 export const LEVELS_BY_ID = LEVELS.reduce((acc, lvl) => {
   acc[lvl.level] = lvl

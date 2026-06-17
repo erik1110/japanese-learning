@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { LEVELS, allWordsForLevel } from '../data/index.js'
 import FlashCard from '../components/FlashCard.jsx'
+import HideKanjiToggle from '../components/HideKanjiToggle.jsx'
 
 function shuffle(arr) {
   const a = [...arr]
@@ -40,6 +41,10 @@ export default function Review() {
       <div className="view">
         <h1 className="view-title">隨機背誦</h1>
         <p className="view-sub">隨機抽出單字卡，翻面背誦並自我評量</p>
+        <div className="quiz-setting">
+          <HideKanjiToggle />
+          <p className="quiz-setting-hint">開啟後卡片正面只顯示假名，翻面才看漢字</p>
+        </div>
         <div className="level-grid">
           {LEVELS.map((lvl) => (
             <button key={lvl.level} className="level-card" onClick={() => start(lvl.level)}>
