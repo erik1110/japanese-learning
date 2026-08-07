@@ -9,6 +9,7 @@ import n5 from './n5.json'
 import onomatopoeia from './onomatopoeia.json'
 import dialogues from './dialogues.json'
 import anime from './anime.json'
+import songs from './songs.json'
 import gn1 from './grammar-n1.json'
 import gn2 from './grammar-n2.json'
 import gn3 from './grammar-n3.json'
@@ -58,6 +59,16 @@ export const ANIME_NOTE = anime.note_zh
 
 export function getAnimeWork(workId) {
   return ANIME_WORKS.find((w) => w.id === workId)
+}
+
+// Japanese song analysis. Each song carries only short quoted excerpts used as
+// grammar / vocabulary teaching examples (never the full lyric sheet) plus the
+// official video link — see SONG_NOTE.
+export const SONGS = songs.songs
+export const SONG_NOTE = songs.note_zh
+
+export function getSong(songId) {
+  return SONGS.find((s) => s.id === songId)
 }
 
 // Grammar, one entry per JLPT level (easiest to hardest).

@@ -6,6 +6,7 @@ import Review from './views/Review.jsx'
 import Dialogues from './views/Dialogues.jsx'
 import Grammar from './views/Grammar.jsx'
 import Anime from './views/Anime.jsx'
+import Songs from './views/Songs.jsx'
 import MockExam from './views/MockExam.jsx'
 import { cancelSpeech } from './utils/speech.js'
 
@@ -18,9 +19,10 @@ const VIEWS = {
   review: { title: '隨機背誦', component: Review },
   dialogues: { title: '情境對話', component: Dialogues },
   anime: { title: '動漫日語', component: Anime },
+  songs: { title: '日文歌分析', component: Songs },
 }
 
-const NAV = ['flashcards', 'grammar', 'quiz', 'exam', 'review', 'dialogues', 'anime']
+const NAV = ['flashcards', 'grammar', 'quiz', 'exam', 'review', 'dialogues', 'anime', 'songs']
 
 // External links shown at the end of the nav bar.
 const EXTERNAL_LINKS = [

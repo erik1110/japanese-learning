@@ -41,6 +41,12 @@ const MODES = [
     title: '動漫日語',
     desc: '22 部人氣動漫、各 3 種情境的原創練習句（非真實台詞），可聽發音。',
   },
+  {
+    key: 'songs',
+    icon: '🎵',
+    title: '日文歌分析',
+    desc: '從日文歌學文法與單字：重點句型解析、單字整理、逐句解說與小測驗，並附官方 MV。',
+  },
 ]
 
 export default function Home({ navigate }) {

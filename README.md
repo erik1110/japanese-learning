@@ -18,6 +18,7 @@ through the browser's built-in speech synthesis — no audio files required.
 | ✍️ Quiz | 牛刀小試 | Randomly generated multiple-choice quiz — pick the correct Chinese meaning out of 4 options, with instant feedback and a score. |
 | 🔀 Review | 隨機背誦 | Shuffled flashcard deck for spaced self-testing ("I knew it" / "not yet"). |
 | 💬 Dialogues | 情境對話 | Situational conversations in **10 categories × 5 scenarios**. Play the whole dialogue or listen line by line. |
+| 🎵 Songs | 日文歌分析 | Japanese song study. Each song has a **grammar breakdown**, a **vocabulary list** with JLPT levels, line-by-line commentary and a mini quiz, plus a link to the official MV. Only short lyric excerpts are stored — used as teaching examples, never the full lyric sheet. |
 
 - **Furigana everywhere** — kanji always shows its reading above it.
 - **Text-to-speech** — uses the Web Speech API (`SpeechSynthesis`). Works best
