@@ -19,6 +19,8 @@ through the browser's built-in speech synthesis — no audio files required.
 | 🔀 Review | 隨機背誦 | Shuffled flashcard deck for spaced self-testing ("I knew it" / "not yet"). |
 | 💬 Dialogues | 情境對話 | Situational conversations in **10 categories × 5 scenarios**. Play the whole dialogue or listen line by line. |
 | 🎵 Songs | 日文歌分析 | Japanese song study. Each song has a **grammar breakdown**, a **vocabulary list** with JLPT levels, line-by-line commentary and a mini quiz, plus a link to the official MV. Only short lyric excerpts are stored — used as teaching examples, never the full lyric sheet. |
+| 🗼 Tokyo Life | 東京生活篇 | A choice-driven scenario game across **17 scenes** in two arcs — *一天* (one day in Tokyo: convenience store → train → izakaya → declining the after-party) and *生活* (the life admin that actually trips people up: city hall, hospital, rubbish sorting, redelivery, apartment hunting, hair salon). Each step asks what you would *say* or *do*; **every option is explained**, including why the wrong ones land badly, with vocabulary quizzes mixed in. Earns EXP/coins and ends with a rank and a vocabulary review. |
+| 🍶 Menu | 菜單解讀 | Japanese menus use kanji and abbreviations that appear almost nowhere else (`〆`, `時価`, `並`, `突き出し`). A full izakaya menu board rendered as it would be printed, with every item annotated: reading, meaning, and **what the dish actually is**. Includes a *hide the Chinese* self-test toggle, a reference of common menu markings, and a quiz. |
 
 - **Furigana everywhere** — kanji always shows its reading above it.
 - **Text-to-speech** — uses the Web Speech API (`SpeechSynthesis`). Works best

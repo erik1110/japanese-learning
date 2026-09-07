@@ -7,6 +7,8 @@ import Dialogues from './views/Dialogues.jsx'
 import Grammar from './views/Grammar.jsx'
 import Anime from './views/Anime.jsx'
 import Songs from './views/Songs.jsx'
+import Tokyo from './views/Tokyo.jsx'
+import Menu from './views/Menu.jsx'
 import MockExam from './views/MockExam.jsx'
 import { cancelSpeech } from './utils/speech.js'
 
@@ -20,9 +22,22 @@ const VIEWS = {
   dialogues: { title: '情境對話', component: Dialogues },
   anime: { title: '動漫日語', component: Anime },
   songs: { title: '日文歌分析', component: Songs },
+  tokyo: { title: '東京生活篇', component: Tokyo },
+  menu: { title: '菜單解讀', component: Menu },
 }
 
-const NAV = ['flashcards', 'grammar', 'quiz', 'exam', 'review', 'dialogues', 'anime', 'songs']
+const NAV = [
+  'flashcards',
+  'grammar',
+  'quiz',
+  'exam',
+  'review',
+  'dialogues',
+  'anime',
+  'songs',
+  'tokyo',
+  'menu',
+]
 
 // External links shown at the end of the nav bar.
 const EXTERNAL_LINKS = [
